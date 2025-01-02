@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <title>Técnica Pomodoro</title>
+</head>
+
+<body>
+    <!--Botões-->
+    <section class="sectionButtons">
+        <div class="buttons d-flex w-auto flex-wrap justify-content-center gap-3 mt-5 ">
+            <button id="start" type="button" class="MyButtons btn fw-bold border border-3 border-warning text-warning rounded-4 bg-dark bg-gradient ">Iniciar</button>
+            <button id="pause" type="button" class="MyButtons btn fw-bold border border-3 border-warning text-warning rounded-4 bg-dark bg-gradient">Pausar</button>
+            <button id="restart" type="button" class="MyButtons btn fw-bold border border-3 border-warning text-warning rounded-4 bg-dark bg-gradient">Reiniciar</button>
+            <button id="alarmoff" type="button" class="MyButtons btn fw-bold border border-3 border-warning text-warning rounded-4  bg-warning bg-gradient text-black w-auto">Desativar Alarme</button>
+
+        </div>  
+    </section>
+     <!--Cronometro-->
+    <section class="SectionTimer container-fluid d-flex justify-content-center align-items-center w-auto mx-auto my-auto">
+        <div class="d-flex flex-column align-items-center"> 
+            <div id="timer" class="fs-1 fw-bold mb-5 text-warning">30:00</div>
+            <p id="Cycles" class="turn fw-bold mt-5 ">0/4</p>
+        </div>
+    </section>  
+
+    <p id="statusAlert"></p>
+    <button class="SoundOff" type="button">🔊</button>
+
+<audio id="AlarmSong" src="./assets/Alarm.mp3" preload="auto" loop></audio>
+<audio id="StudySong" src="./assets/Study.mp3" preload="auto" loop></audio>
+    
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<script src="./scripts.js"></script>
+
+
+</body>
+
+</html>
+

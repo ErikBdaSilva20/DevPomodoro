@@ -1,0 +1,232 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BODY */
+body {
+    background-image: url(./assets/studyImage.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: black;
+    overflow: hidden;
+    height: 100vh;
+    width: 100vw;
+}
+
+/* ESCURECIMENTO DA TELA */
+body::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.856);
+    z-index: -1;
+    display: flex;
+}
+
+.SectionTimer {
+    height: 50vh;
+}
+
+#timer {
+    width: 15vh;
+    height: 15vh;
+    border: 6px solid rgb(255, 208, 0);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.turn {
+    position: absolute;
+    font-size: 50px;
+}
+
+#Cycles {
+    color: rgb(255, 174, 0);
+
+
+    padding: 20px;
+}
+
+#statusAlert {
+
+    font-size: 3rem;
+    color: rgb(255, 0, 0);
+    justify-content: center;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#restTime {
+    font-size: 3rem;
+    color: rgb(0, 100, 215);
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    display: none;
+}
+
+button {
+    margin: 0 12px;
+    gap: 30px;
+}
+
+button:hover {
+    opacity: 0.8;
+    transform: scale(1.2);
+}
+
+button:active {
+    opacity: 0.4;
+    transform: scale(1.3);
+}
+
+.containerTimer {
+    height: 50vh;
+}
+
+#Cycles {
+    bottom: 25vh;
+}
+
+#alarmoff {
+    display: none;
+}
+
+/* Adicionando animação para piscar */
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.blinking {
+    animation: blink 1s infinite;
+    /* Faz a animação piscar a cada 1 segundo */
+}
+
+
+
+
+
+
+/* CELULAR PEQUENO A GRANDE (600px a 799px) */
+@media (min-width: 300px) and (max-width: 799px) {
+
+    body {
+        background-size: cover;
+        background-position: center;
+        height: 100vh;
+
+    }
+
+    .MyButtons {
+        width: 40%;
+        height: 50px;
+    }
+
+    .SectionTimer {
+        height: 50vh;
+    }
+
+    #timer {
+        width: 25vh;
+        height: 25vh;
+        border: 6px solid rgb(255, 208, 0);
+        border-radius: 50%;
+        background-color: rgba(0, 0, 0, 0.507);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        font-size: 2rem;
+
+    }
+
+}
+
+/* CELULARES MAIORES E TELAS MAIORES */
+@media (min-width: 800px) and (max-width: 1199px) {
+    body {
+        background-size: cover;
+        background-position: center;
+        height: 100vh;
+
+
+    }
+
+
+    .MyButtons {
+        width: 30%;
+        height: 60px;
+    }
+
+    .SectionTimer {
+        height: 50vh;
+    }
+
+    #timer {
+        width: 30vh;
+        height: 30vh;
+        border: 6px solid rgb(255, 208, 0);
+        border-radius: 50%;
+        background-color: rgba(0, 0, 0, 0.507);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        font-size: 2.5rem;
+    }
+
+}
+
+/* TELAS MUITO GRANDES (1200px ou mais, desktops e dispositivos com telas muito grandes) */
+@media (min-width: 1200px) {
+    body {
+        background-size: cover;
+        background-position: center;
+        height: 100vh;
+    }
+
+
+    .MyButtons {
+        width: 15%;
+        height: 70px;
+    }
+
+    .SectionTimer {
+        height: 50vh;
+    }
+
+    #timer {
+        width: 25vh;
+        height: 25vh;
+        border: 6px solid rgb(255, 208, 0);
+        border-radius: 50%;
+        background-color: rgba(0, 0, 0, 0.507);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        font-size: 3rem;
+
+    }
+
+}
