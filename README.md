@@ -12,7 +12,7 @@
   <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript Badge">
 </p>
 
-<h2>📋 Como Funciona:</h2>
+<h2>📋 Como Funciona:</h2> 
 <ul>
   <li>🔄 O temporizador conta com ciclos de 30 minutos de trabalho e 5 minutos de intervalo.</li>
   <li>⏳ No quarto ciclo, o intervalo é maior, com 15 minutos de descanso, permitindo uma pausa mais longa para recarregar as energias.</li>
